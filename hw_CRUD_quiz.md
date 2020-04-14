@@ -7,6 +7,7 @@ Use the solution to this afternoon's Property Tracker lab to answer the followin
 In our Property Tracker application:
 
 Q1. Where are we instantiating instances of the `Property` class?
+A1. In the console.rb file
 
 Q2. Where are we defining the SQL that enables us to save the ruby `Property` object into the database?
 
