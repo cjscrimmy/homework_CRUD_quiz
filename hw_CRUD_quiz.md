@@ -35,6 +35,10 @@ searching is a higher level function and is used to search the database
 at large.
 
 Q8. What type of data structure is returned by calls to `db.exec_prepared()`? In the `save` method, how do we access the id from the returned data structure?
+A8. db.exec_prepared() returns a pg object which is an array of hashes.
+The id is accessed by looking into the start of the pg array and 
+accessing the id field of the hash and turning it into an int.
+Once this is done, you set the returned id to @id instance variable.  
 
 Q9. Why do we use prepared statements when performing database operations?
 
