@@ -13,6 +13,7 @@ Q2. Where are we defining the SQL that enables us to save the ruby `Property` ob
 A2. In the property.rb file
 
 Q3. In `console.rb`, which lines modify the database?
+A3. lines 13, 22, 31, 33
 
 Q4. Why do we not define the id of a `Property` object at the point we instantiate it (‘new it up’)?
 
