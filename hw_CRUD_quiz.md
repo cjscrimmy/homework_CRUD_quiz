@@ -23,8 +23,10 @@ A5. The id is assigned in the property.rb file. It is to assigned to
 the object by setting the @id variable of the instance to equal the id that has been returned by the database.
 
 Q6. Why do we put a guard (an `if` clause) on the `@id` attribute in the constructor?
+A6. This is added so that @id is only set if one exists for that instance.
 
 Q7. Why are some of the CRUD actions represented by instance methods, and others by class methods?
+A7.
 
 Q8. What type of data structure is returned by calls to `db.exec_prepared()`? In the `save` method, how do we access the id from the returned data structure?
 
