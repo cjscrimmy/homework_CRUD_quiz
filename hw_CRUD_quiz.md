@@ -26,7 +26,13 @@ Q6. Why do we put a guard (an `if` clause) on the `@id` attribute in the constru
 A6. This is added so that @id is only set if one exists for that instance.
 
 Q7. Why are some of the CRUD actions represented by instance methods, and others by class methods?
-A7.
+A7. The save and update methods are used to insert or update a single row in
+the database. Each row is equal to one instance and the instance itself 
+should be responsible for saving and updating itself. This is the same for 
+delete. The class should be involved with searching and reading the data.
+The instances shouldn't be in involved with search for data because 
+searching is a higher level function and is used to search the database
+at large.
 
 Q8. What type of data structure is returned by calls to `db.exec_prepared()`? In the `save` method, how do we access the id from the returned data structure?
 
