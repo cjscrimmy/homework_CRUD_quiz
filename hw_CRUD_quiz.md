@@ -56,3 +56,5 @@ find_by_address method takes the address of the property instance you want to
 find as an argument.
 
 Q11. What are their return values?
+A11. These methods return the property object that have been found by 
+the sql.
