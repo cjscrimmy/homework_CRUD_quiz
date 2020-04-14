@@ -29,10 +29,13 @@ Q7. Why are some of the CRUD actions represented by instance methods, and others
 A7. The save and update methods are used to insert or update a single row in
 the database. Each row is equal to one instance and the instance itself 
 should be responsible for saving and updating itself. This is the same for 
-delete. The class should be involved with searching and reading the data.
+deleting a single row. 
+The class should be involved with searching and reading the data.
 The instances shouldn't be in involved with search for data because 
 searching is a higher level function and is used to search the database
-at large.
+at large. The delete_all method is used to delete all the rows from the 
+table and should only be done by the class. An instance should not be
+able to delete everything.
 
 Q8. What type of data structure is returned by calls to `db.exec_prepared()`? In the `save` method, how do we access the id from the returned data structure?
 A8. db.exec_prepared() returns a pg object which is an array of hashes.
@@ -48,5 +51,8 @@ A9. We use prepared statements to protect from sql injections.
 Look at the `find_by_id` and `find_by_address` methods in the `Property` class.
 
 Q10. What do they take in as their arguments?
+A10. find_by_id method takes the id of the property instance you want to find as an argument.
+find_by_address method takes the address of the property instance you want to
+find as an argument.
 
 Q11. What are their return values?
