@@ -41,6 +41,7 @@ accessing the id field of the hash and turning it into an int.
 Once this is done, you set the returned id to @id instance variable.  
 
 Q9. Why do we use prepared statements when performing database operations?
+A9. We use prepared statements to protect from sql injections.
 
 ## Extension Questions
 
