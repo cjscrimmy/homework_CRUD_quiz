@@ -10,7 +10,7 @@ Q1. Where are we instantiating instances of the `Property` class?
 A1. In the console.rb file
 
 Q2. Where are we defining the SQL that enables us to save the ruby `Property` object into the database?
-A2. In the property.rb file
+A2. In the property.rb file, Property save method
 
 Q3. In `console.rb`, which lines modify the database?
 A3. lines 13, 22, 31, 33
